@@ -1,0 +1,22 @@
+.asks {
+    margin-bottom: 8.33vw;
+}
+
+.asks_main {
+    width: 60%;
+    padding: 2.6vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .asks_main {
+        width: 85%;
+    }
+}
+
+@media (max-width: 640px) {
+    .asks_main {
+        width: 100%;
+        padding: 0;
+    }
+}

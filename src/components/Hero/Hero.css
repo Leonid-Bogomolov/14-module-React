@@ -1,0 +1,250 @@
+.hero {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12vw;
+}
+
+.hero_fictitious {
+    height: 6.2vw;
+    margin-bottom: 3vw;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 88.6%;
+}
+
+.hero_vizitka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+    margin-bottom: 2vw;
+}
+
+.hero_who {
+    width: 50%;
+}
+
+.hero-activity {
+align-self: center;
+color: inherit;
+}
+
+.hero-name {
+    font-size: 3.5vw;
+    font-weight: lighter;
+    color: inherit;
+}
+
+.hero_transition {
+    width: 6.8vw;
+    font-size: 3vw;
+    color: #b5b5b5;
+    background-color: blue;
+    border: none;
+    border-radius: 3.4vw;
+    cursor: pointer;
+}
+
+.hero_transition:hover {
+    color: white;
+} 
+
+.hero_albums {
+    white-space: nowrap;
+    height: 3vw;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.hero_iconStar {
+    display: inline-block;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3) url(./images/iconStar.png) no-repeat center center/cover;
+}
+
+.hero_item {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 0.2vw;
+    transform: translateY(-1vw);
+}
+
+.hero_item:hover {
+    color: #fff;
+}
+
+.hero_banner {
+    width: 100%;
+    height: 56%;
+}
+
+.hero_img-1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_img-1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8vw;
+    width: 24%;
+    height: 100%;
+}
+
+.hero_img-1-1-1 {
+    width: 100%;
+    height: 13.5vw;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background: transparent url(../Hero/images/game_of_pairs.jpg) no-repeat center center/cover;
+}
+
+.hero_img-1-1-2 {
+    width: 100%;
+    height: 13.5vw;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background: transparent url(../Hero/images/akvarel.png) no-repeat center center/cover;
+}
+
+.hero_img-1-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8vw;
+    width: 28%;
+    height: 100%; 
+}
+
+.hero_img-1-2-1 {
+    width: 100%;
+    height: 13.5vw;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background: transparent url(../Hero/images/bank.jpg) no-repeat center center/cover;
+}
+
+.hero_img-1-2-3 {
+    width: 100%;
+    height: 13.5vw;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background: transparent url(../Hero/images/shop.jpg) no-repeat center center/cover;
+}
+
+.hero_img-1-3 {
+    width: 46.4%;
+    height: 28vw;
+    border-radius: 14px;
+    border: 1px solid rgb(33, 33, 63);
+    background: transparent url(../Hero/images/Error_404.jpg) no-repeat center center/cover;
+}
+
+.hero_img-2 {
+    position: absolute;
+    top: 10vw;
+    left: 14vw;
+    width: 24vw;
+    height: 12vw;
+    padding: 0.7vw;
+    border-radius: 20px;
+    background-color: #070708;
+    transform: rotate(28deg);
+}
+
+.hero_img-2-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    background: transparent url(../Hero/images/web-developer.jpg) no-repeat center center/cover;
+}
+
+.hero_img-3 {
+    position: absolute;
+    top: 8vw;
+    left: 45vw;
+    width: 20vw;
+    height: 16vw;
+    padding: 0.7vw;
+    border-radius: 20px;
+    background-color: #070708;
+    transform: rotate(-6deg);
+}
+
+.hero_img-3-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    border: 1px solid rgb(47, 47, 91);
+    background: rgb(96, 120, 96) url(../Hero/images/designer.png) no-repeat center center/cover;
+}
+
+@media (max-width: 1024px) {
+    .hero_albums {
+        margin-bottom: 10px;
+    }  
+}
+
+@media (max-width: 640px) {
+    .hero {
+        height: auto;
+    }
+    .hero_fictitious {
+        height: 27vw;
+        margin-bottom: 30px;
+    }
+    .hero_vizitka {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .hero_who {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .hero-name {
+        font-size: 40px;
+    }
+    .hero_transition {
+        width: 64px;
+        font-size: 28px;
+    }
+    .hero_albums {
+        height: 20px;
+    }
+    .hero_item {
+        transform: translateY(-6px);
+    }
+    .hero_banner {
+        height: auto;
+    }
+}

@@ -1,0 +1,152 @@
+.testimonials {
+    height: auto;
+    margin-bottom: 12vw;
+}
+
+.testimonials_header {
+    margin-bottom: 4.2vw;
+}
+
+.testimonials_nominal {
+    margin-bottom: 3vw;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2.6vw;
+}
+
+.span18 {
+    display: inline-block;
+    margin-bottom: 0.5vw;
+}
+
+.counter {
+    font-size: 1.7vw;
+}
+
+.testimonials_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.testimonials_main {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.testimonials_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    height: 17.6vw;
+    padding: 2.1vw;
+}
+
+.card_heard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_name {
+   font-size: 1.2vw; 
+}
+
+.card_country {
+    font-size: 1vw;
+}
+
+.card_networks {
+    width: auto;
+}
+
+.score {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card_good {
+    width: 5.6%;
+    aspect-ratio: 1 / 1;
+    background: transparent url(.//images/Shape-star.png) no-repeat center/cover;
+    margin-right: 0.6vw;
+}
+
+.testimonials > .pagination {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .counter {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonials {
+        margin-bottom: 20vw;
+    }
+    .testimonials_header {
+        margin-bottom: 40px;
+    }
+    .total {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .testimonials_nominal {
+        margin-bottom: 20px;
+    }
+    .testimonials_all {
+        margin-bottom: 20px;
+    }
+    .testimonials_all > .pagination {
+        display: none;
+    }
+    .testimonials_main {
+        flex-direction: column;
+    }
+    .testimonials_card {
+        width: 100%;
+        height: auto;
+    }
+    .card-2, .card-3 {
+        display: none;
+    }
+    .card_name {
+       font-size: 16px; 
+    }
+        .card_country {
+        font-size: 14px;
+    }
+    .testimonial > p {
+        font-size: 16px;
+    }
+    .card_heard {
+        margin-bottom: 20px;
+    }
+    .score {
+        margin-bottom: 20px;
+    }
+    .card_networks > .social > a {
+        width: 35px;
+        height: 35px;
+    }
+    .testimonials > .pagination {
+        display: flex;
+    }
+    .pagination640 {
+        height: 64px;
+        margin: 40px auto 0;
+    }
+    .pagination640 > .services_circle > span {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}

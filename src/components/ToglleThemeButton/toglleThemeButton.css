@@ -1,0 +1,44 @@
+.toglle-btn-wrapper {
+    position: fixed;
+    display: block;
+    top: 1.745vw;
+    left: 1vw;
+    width: 30px;
+    height: 17px;
+    z-index: 10;
+}
+
+.toglle-input {
+    display: none;
+}
+
+.toglle-btn {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+    color: #434343;
+    text-align: center;
+    background-color: #b5b5b5;
+    border: 1px solid inherit;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dark {
+    display: inline-block;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: black;
+    margin-bottom: 1px;
+}
+
+.light {
+    display: inline-block;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: white;
+    margin-bottom: 1px;
+}

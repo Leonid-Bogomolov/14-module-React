@@ -1,0 +1,146 @@
+.portfolio {
+    margin-bottom: 10vw;
+}
+
+.portfolio_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.2vw;
+}
+
+.portfolio_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 24vw;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    height: 2.5vw;
+}
+
+.circle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.portfolio_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    /*color: #b5b5b5;*/
+    color: inherit;
+    border: 1px solid #434343;
+    background-color: rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+    padding-bottom: 0.7vw;
+}
+
+.portfolio_circle:hover {
+    color: white;
+    border-color: white;
+}
+
+.back {
+    margin-right: 1vw;
+}
+
+.portfolio_gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.gallery_container {
+    width: 31.5%;
+    height: auto;
+}
+
+.gallery_img {
+    width: 100%;
+    aspect-ratio: 25 / 26;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+}
+
+.game_of_pairs {
+    background: transparent url(../Hero/images/game_of_pairs.jpg) no-repeat center/cover;
+    }
+
+.shop {
+    background: transparent url(../Portfolio/images/shop.jpg) no-repeat center/cover;
+}
+
+.akvarel {
+    background: transparent url(../Hero/images/akvarel.png) no-repeat center/cover;
+}
+
+.work-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.portfolio_title {
+    align-self: center;
+    font-size: 1vw;
+    /*color: #b5b5b5;*/
+    color: inherit;
+    width: 40%;
+}
+
+.portfolio_btn {
+    width: 46%;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .portfolio_title {
+        font-size: 10.2px;
+    }
+}
+
+@media (max-width: 640px) {
+    .portfolio_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portfolio_nominal {
+        margin-bottom: 20px;
+    }
+    .portfolio_all > .pagination {
+        display: none;
+    }
+    .portfolio_gallery {
+        height: auto;
+    }
+    .gallery_container {
+        width: 100%;
+    }
+    .gallery2 {
+        display: none;
+    }
+    .gallery3 {
+        display: none;
+    }
+    .portfolio_title {
+        width: 60%;
+        font-size: 16px;
+    }
+    .portfolio_btn {
+        width: 126px;
+    }
+    .work-description > .btn {
+        font-size: 14px;
+    }
+    .pagination640 > .portfolio_circle > span {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,112 @@
+@import url(./var.css);
+@import url(./components/ToglleThemeButton/toglleThemeButton.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 2.5vw;
+    font-weight: lighter;
+    /*color: #b5b5b5;*/
+    color: inherit;
+    text-transform: uppercase;
+} 
+h3 {
+    font-size: 1.6vw;
+    font-weight: lighter;
+    color: inherit;
+}
+a, p {
+    font-size: 1.2vw;
+    color: inherit;
+}
+
+html, body { 
+    overflow-x: hidden; 
+  } 
+
+body {
+    display: block;
+    max-width: 1920px;
+    background: transparent;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.toglle-btn-wrapper.toglle-btn-wrapper:has(input[type='checkbox'][id='light']:checked) ~ .content {
+    --bg: var(--dark-color);
+    color: var(--light-color);
+    --bg-burger: var(--light-color);
+}
+.toglle-btn-wrapper.toglle-btn-wrapper:has(input[type='checkbox'][id='dark']:checked) ~ .content {
+    --bg: var(--light-color);
+    color: var(--dark-color);
+    --bg-burger: var(--dark2-color);
+}
+.container {
+    width: 100%;
+    padding: 0 8.4%;
+}
+.btn{
+    font-size: 1vw;
+    color: inherit;
+    width: auto;
+    height: 2.5vw;
+    padding: 0 1vw;
+    border-radius: 0.52vw;
+    border: 1px solid #434343;
+    background-color: rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+}
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+.block-nominal {
+    display: inline-block;
+    font-size: 1.05vw;
+    color: inherit;
+    text-transform: uppercase;
+    padding-bottom: 1vw;
+}
+.content {
+    background-color: var(--bg);
+    color: var(--light-color);
+    transition: background-color 1s, color 1s;
+}
+
+@media (max-width: 1024px) {
+
+    h2 {
+        font-size: 25.6px;
+    }
+
+    h3 {
+        font-size: 16.4px;
+    }
+
+    a, p {
+        font-size: 12.3px;
+    }
+
+    .btn {
+        font-size: 10.2px;
+        height: 25.6px;
+    }
+
+    .block-nominal {
+        font-size: 10.8px;
+    }
+}
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 28px;
+    }
+    .btn {
+        height: 50px;
+        padding: 0 20px;
+    }
+}
+    

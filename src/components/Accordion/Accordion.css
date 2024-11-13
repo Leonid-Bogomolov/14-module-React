@@ -1,0 +1,70 @@
+.accordion__item {
+    padding: 1vw 0;
+}
+
+.accordion__header {
+    padding: 1vw 0;
+}
+
+.ask {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ask:hover {
+    color: white;
+    transition: color 0.5s ease-in-out;
+}
+
+.ask > p {
+    font-size: 1.4vw;
+}
+
+.textAsk {
+    width: 90%;
+    align-self: center;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
+
+.accordion__body {
+    font-size: 1.2vw;
+}
+
+.markDown {
+    display: inline-block;
+    transform: rotate(90deg);
+    width: 0vw;
+    height: 3vw;
+    font-size: 3vw;
+}
+
+.markTop {
+    display: none;
+    transform: rotate(90deg);
+    width: 0vw;
+    height: 3vw;
+    font-size: 3vw;
+    color: rgb(255, 76, 76);
+}
+
+.accordion__item:is(.accordion__item_show) .markDown {
+    display: none;
+}
+
+.accordion__item:is(.accordion__item_show) .markTop {
+    display: inline-block;
+}
+
+@media (max-width: 1024px) {
+    .ask > p {
+        font-size: 16px;
+    }
+    .accordion__body {
+        font-size: 14px;
+    }
+}

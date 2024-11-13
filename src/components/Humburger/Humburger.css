@@ -1,0 +1,18 @@
+.humburger {
+    aspect-ratio: 32/25;
+}
+
+.humburger__filling {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.humburger__core {
+    width: 100%;
+    aspect-ratio: 10/1;
+    background-color: var(--bg-burger);
+}

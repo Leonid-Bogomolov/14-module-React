@@ -1,0 +1,98 @@
+.header {
+    position: fixed;
+    /*top: 0;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.2vw;
+    /*background-color: #070708;*/
+    background-color: var(--bg);
+    transition: background-color 1s;
+    z-index: 1;
+}
+
+.name {
+    font-size: 2.4vw;
+    font-weight: 800;
+    color: #666;
+    line-height: 100%;
+}
+
+.surname {
+    width: 100%;
+    font-size: 0.6vw;
+    font-weight: 800;
+    /*font-stretch: ultra-expanded;*/
+    letter-spacing: 1.36em;
+    color: #666;
+    line-height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: calc(50% + 60px);
+    margin-bottom: 1.2vw;
+}
+
+.menu-item {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: #fff;
+}
+
+.outHumburger {
+    display: none;
+    width: auto;
+    height: auto;
+    padding: 0.4vw;
+}
+
+.outHumburger:hover {
+    outline: 3px solid white;
+}
+
+.humburger {
+    display: block;
+    width: 4vw;
+    cursor: pointer;
+}
+
+.menuMobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 10vw 5vw;
+}
+
+@media (max-width: 640px) {
+    .header {
+        padding-top: 9vw;
+        height: 27vw;
+    }
+
+    .menu {
+        display: none;
+    }
+    .header_contacts {
+        display: none;
+    }
+    .name {
+        font-size: 6vw;
+    }
+    .surname {
+        font-size: 1.5vw;
+        letter-spacing: 1.38em;
+    }
+    .outHumburger {
+        display: block;
+    }
+    /*.new__MenuMobile {
+        display: block;
+    }*/
+}
