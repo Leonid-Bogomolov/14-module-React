@@ -5,7 +5,7 @@ import Accordion from "../Accordion/Accordion";
 const Asks = () => {
 
   return (
-    <section className="asks container">
+    <section id="asked" className="asks container">
       <div className="asks_nominal">
         <span className="block-nominal">asks</span>
         <h2>Часто задаваемые вопросы</h2>

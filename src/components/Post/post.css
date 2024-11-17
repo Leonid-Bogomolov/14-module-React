@@ -1,0 +1,90 @@
+.post {
+    width: 4vw;
+    aspect-ratio: 32/25;
+    cursor: pointer;
+}
+
+.humburger__filling {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.humburger__core {
+    width: 100%;
+    aspect-ratio: 10/1;
+    background-color: #666;
+}
+
+.humburger__filling:hover > .humburger__core {
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    color: #354147;
+    background-color: white;
+    padding: 10vw;
+    margin: 0;
+}
+
+.li-mobile {
+    padding: 2vw;
+}
+
+.menuMobile > div > ul > .li-mobile > .menu-item {
+    font-size: 22px;
+    font-weight: 800;
+    color: #354147;
+}
+
+.menuMobile > div > ul > .li-mobile > .menu-item:hover {
+    color: #b5b5b5;
+}
+
+.menu__crossburger {
+    align-self: flex-end;
+    position: relative;
+    display: block;
+    height: 30px;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    rotate: 45deg;
+    cursor: pointer;
+    transition: rotate 0.3s ease-in-out 0s;
+}
+
+.line-horizontal {
+    position: absolute;
+    top: 45.31%;
+    width: 100%;
+    height: 9.38%;
+    background-color: #354147;
+}
+
+.line-vertical {
+    position: absolute;
+    top: 0;
+    left: 45.31%;
+    height: 100%;
+    width: 9.38%;
+    background-color: #354147;
+}
+
+.menu__crossburger:hover > .cross {
+    background-color: #b5b5b5;
+}
