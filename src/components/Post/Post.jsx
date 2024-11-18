@@ -20,12 +20,12 @@ const Post = ({ post }) => {
                     </div>
                     <div>
                         <ul>
-                            <li className="li-mobile"><a className="menu-item" href="#hero">Главная</a></li>
-                            <li className="li-mobile"><a className="menu-item" href="#about">Обо мне</a></li>
-                            <li className="li-mobile"><a className="menu-item" href="#services">Services</a></li>
-                            <li className="li-mobile"><a className="menu-item" href="#portfolio">Portfolio</a></li>
-                            <li className="li-mobile"><a className="menu-item" href="#asked">Задать вопрос</a></li>
-                            <li className="li-mobile"><a className="menu-item" href="#testimonials">Отзывы</a></li>
+                            <li className="li-mobile"><a className="menu-item" href="#hero" onClick={() => setShowMenu(!showMenu)}>Главная</a></li>
+                            <li className="li-mobile"><a className="menu-item" href="#about" onClick={() => setShowMenu(!showMenu)}>Обо мне</a></li>
+                            <li className="li-mobile"><a className="menu-item" href="#services" onClick={() => setShowMenu(!showMenu)}>Services</a></li>
+                            <li className="li-mobile"><a className="menu-item" href="#portfolio" onClick={() => setShowMenu(!showMenu)}>Portfolio</a></li>
+                            <li className="li-mobile"><a className="menu-item" href="#asked" onClick={() => setShowMenu(!showMenu)}>Задать вопрос</a></li>
+                            <li className="li-mobile"><a className="menu-item" href="#testimonials" onClick={() => setShowMenu(!showMenu)}>Отзывы</a></li>
                         </ul>
                     </div>
                 </div>

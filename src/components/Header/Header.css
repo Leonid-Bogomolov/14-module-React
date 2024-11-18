@@ -46,7 +46,7 @@
 }
 
 .outHumburger {
-    display: none;
+    /*display: none;*/
     width: auto;
     height: auto;
     padding: 0.4vw;
